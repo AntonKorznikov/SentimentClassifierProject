@@ -6,6 +6,7 @@ class MongoDB:
         self.client = MongoClient(uri)
         self.db = self.client[db_name]
         self.collection = self.db[collection_name]
+        print("COLLECTION CREATED")
 
     def insert_message(self, log_entry):
         """Insert a log entry into the collection."""

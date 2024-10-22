@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - API_TOKEN=${API_TOKEN} # Make sure to set this in your .env file or your environment
+      - API_TOKEN=${API_TOKEN}
     depends_on:
       - mongo
     networks:

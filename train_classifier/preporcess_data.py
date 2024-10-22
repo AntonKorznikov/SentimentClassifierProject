@@ -20,28 +20,22 @@ df = pd.read_csv(
 
 encoder = SentenceTransformer("all-distilroberta-v1")
 
-# Assume `texts` is your text data, and `hate_scores` is the hate score feature
 texts = list(df.text)
 text_embeddings = encoder.encode(texts, batch_size=16, show_progress_bar=True)
 
 with open("doc_embedding.pickle", "wb") as pkl:
     pickle.dump(text_embeddings, pkl)
-# Combine embeddings with hate_score feature
 # with open("doc_embedding.pickle", "rb") as pkl:
 #     text_embeddings = pickle.load(pkl)
 
 
 X = text_embeddings
+y = df.labels
 
-# Define your labels (target variable)
-y = df.labels  # Make sure labels are encoded as integers for CatBoost
-
-# Split data
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-# Train CatBoost model
 model = CatBoostClassifier(iterations=1000)
 model.fit(X_train, y_train, verbose=100)
 model.save_model("catboost_model.cbm")

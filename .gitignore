@@ -1,0 +1,7 @@
+doc_embedding.pickle
+sentiment-env/
+src/catboost_model.cbm
+src/__pycache__/
+src/catboost_info/
+.env
+train_classifier/*/

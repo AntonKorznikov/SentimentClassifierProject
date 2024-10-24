@@ -1,0 +1,6 @@
+transformers==4.44.2
+torch==2.5.0
+flask==2.2.5
+pytest==7.4.4
+numpy==1.26.4
+pandas==2.2.2

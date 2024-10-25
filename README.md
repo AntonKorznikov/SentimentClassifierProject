@@ -39,6 +39,12 @@ make build
 ```bash
 make test
 ```
+
+4. **Run Project**
+```bash
+make run_all
+```
+
 ### Using Docker
 
 1. **Build Docker Image**

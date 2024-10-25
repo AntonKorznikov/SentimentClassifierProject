@@ -25,9 +25,6 @@ ENV PATH="/app/venv/bin:$PATH"
 
 RUN make build
 
-
-ENTRYPOINT ["make", "run_all"]
-
 # Build the project
 RUN make build
 

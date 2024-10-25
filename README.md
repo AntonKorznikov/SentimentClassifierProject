@@ -86,4 +86,3 @@ make test
 - `processing/`: Contains scripts and tests for running the sentiment analysis model.
 - `postprocessing/`: Contains scripts and tests for processing the model's output.
 - `examples/`: Contains example input and output files.
-- `scripts/`: Utility scripts for running the entire pipeline.

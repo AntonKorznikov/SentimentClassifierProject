@@ -1,1 +1,0 @@
-Sentiment: POSITIVE, Score: 0.999871015548706

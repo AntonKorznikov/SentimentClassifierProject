@@ -23,6 +23,10 @@ test:
 	@echo "Running postprocessing tests..."
 	python -m unittest $(POSTPROCESS_DIR)/tests/test_postprocessing.py
 
+test_preprocessing:
+	@echo "Running preprocessing tests..."
+	python -m unittest $(PREPROCESS_DIR)/tests/test_preprocessing.py
+
 
 run_all:
 	@echo "Running preprocessing..."

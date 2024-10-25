@@ -12,7 +12,7 @@ prereqs:
 
 # Build executables
 build:
-	@echo "Build step can be customized based on the project needs."
+	@echo "Nothing to build"
 
 # Run tests
 test:

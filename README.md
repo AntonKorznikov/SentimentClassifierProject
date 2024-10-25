@@ -21,7 +21,6 @@
 - Make
 - Docker
 - Python 3.8+
-- Git
 
 ## Usage
 

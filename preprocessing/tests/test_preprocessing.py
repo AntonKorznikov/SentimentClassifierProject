@@ -19,7 +19,7 @@ class TestPreprocess(unittest.TestCase):
 
     def tearDown(self):
 
-        shutil.rmtree(INPUT_RAW_DIR)
+
         if os.path.exists(INPUT_DIR):
             shutil.rmtree(INPUT_DIR)
 

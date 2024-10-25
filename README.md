@@ -24,6 +24,11 @@
 
 ## Usage
 
+### Cloning repository
+
+```bash
+git clone https://github.com/AntonKorznikov/SentimentClassifierProject.git
+```
 ### Using Makefile
 
 1. **Install Dependencies**

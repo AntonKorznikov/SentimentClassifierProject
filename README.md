@@ -56,6 +56,20 @@ docker run -v $(pwd)/examples/input_raw:/input_raw -v $(pwd)/examples/output:/ou
 
 Sample input files are provided in the `examples/input_raw/` directory. After running the preprocessing, processing, and postprocessing steps, the results can be found in the `examples/output/` directory.
 
+example of input_raw/sample_input.txt :
+I love this product!
+This service is terrible.
+The quality is just okay.
+Absolutely fantastic experience!
+Not worth the investment at all.
+
+example of output/sample_input.txt :
+Sentiment: POSITIVE, Score: 0.9998855590820312
+Sentiment: NEGATIVE, Score: 0.999573290348053
+Sentiment: POSITIVE, Score: 0.9998542070388794
+Sentiment: POSITIVE, Score: 0.9998812675476074
+Sentiment: NEGATIVE, Score: 0.999803364276886
+
 ## Testing
 
 Run all tests using the Makefile:

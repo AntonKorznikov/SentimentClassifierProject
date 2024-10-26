@@ -1,4 +1,4 @@
-.PHONY: prereqs build test docker
+.PHONY: prereqs build clean test test_preprocessing run_all docker
 
 
 PREPROCESS_DIR=preprocessing
@@ -12,7 +12,12 @@ prereqs:
 
 # Build executables
 build:
-	@echo "Nothing to build"
+	@echo "Building preprocess"
+	g++ -std=c++17 -o preprocessing.o $(PREPROCESS_DIR)/preprocessing.cpp
+
+# Clean binary files
+clean:
+	rm preprocessing.o
 
 # Run tests
 test:
@@ -30,9 +35,10 @@ test_preprocessing:
 
 run_all:
 	@echo "Running preprocessing..."
-	python preprocessing/preprocessing.py
+	#python preprocessing/preprocessing.py
+	./preprocessing.o
 	@echo "Running processing..."
-	python processing/processing.py
+	python $(PROCESS_DIR)/processing.py
 	@echo "Running postprocessing..."
-	python postprocessing/postprocessing.py
+	python $(POSTPROCESS_DIR)/postprocessing.py
 	@echo "All steps completed."

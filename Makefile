@@ -18,6 +18,7 @@ build:
 # Clean binary files
 clean:
 	rm preprocessing.o
+	rm examples/input/*
 
 # Run tests
 test:

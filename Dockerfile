@@ -29,4 +29,4 @@ RUN make build
 RUN make build
 
 # Define entrypoint
-ENTRYPOINT ["make", "run_all"]
+ENTRYPOINT ["make"]

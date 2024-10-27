@@ -20,7 +20,7 @@
 
 - Make
 - Docker
-- Python 3.8+
+- Python 3.9+
 
 ## Usage
 
@@ -39,13 +39,15 @@ make prereqs
 ```bash
 make build
 ```
-
-3. **Run Tests**
+3. **Clean Executables**
+```bash
+make clean
+```
+4. **Run Tests**
 ```bash
 make test
 ```
-
-4. **Run Project**
+5. **Run Project**
 ```bash
 make run_all
 ```

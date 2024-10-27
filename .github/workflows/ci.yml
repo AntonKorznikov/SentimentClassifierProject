@@ -28,4 +28,6 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          pytest preprocessing/tests/test_preprocessing.py
+          pytest processing/tests/test_processing.py
+          pytest postprocessing/tests/test_postprocessing.py
